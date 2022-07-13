@@ -1,0 +1,12 @@
+server:
+  port: 8081
+
+feign:
+  bank: http://localhost:8080/api/v1
+
+security:
+  client-id: clientIdAtm
+  client-secret: UGCCkJ4+9ppyeCs54hHk72YpfeaulaopNdnwScyKu24=
+
+jwt:
+  token-secret: ${JWT_SECRET}

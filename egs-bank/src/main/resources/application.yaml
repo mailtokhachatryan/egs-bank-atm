@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+    open-in-view: true
+
+security:
+  client-id: clientIdAtm
+  client-secret: UGCCkJ4+9ppyeCs54hHk72YpfeaulaopNdnwScyKu24=
+
+
+jwt:
+  token-secret: ${JWT_SECRET}
+  token:
+    expired: "500"
